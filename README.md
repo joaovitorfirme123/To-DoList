@@ -92,6 +92,7 @@ automaticamente.
     2 - List Tasks
     3 - Quit and Save
     4 - Complete Task
+    5 - Remove Task
 
 ------------------------------------------------------------------------
 
