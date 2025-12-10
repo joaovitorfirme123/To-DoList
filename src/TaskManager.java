@@ -51,6 +51,7 @@ public class TaskManager{
             System.out.println("2 - List Tasks");
             System.out.println("3 - Quit and Save");
             System.out.println("4 - Complete Task");
+            System.out.println("5 - Remove Task");
             System.out.println("Option: ");
 
             option = sc.nextInt();
@@ -80,6 +81,7 @@ public class TaskManager{
             else if (option == 4){
                 System.out.println("Write the number of task");
                 int number = sc.nextInt();
+
                 if (number >= 0 && number < tasks.size()){
                     Task t = tasks.get(number);
                     t.markAsDone();
@@ -87,7 +89,18 @@ public class TaskManager{
                 } else {
                     System.out.println("Invalid task number! ");
                 }
+            }
+            else if (option == 5){
+                System.out.println("Write the number of task");
+                int number = sc.nextInt();
+                sc.nextLine();
 
+                if (number >= 0 && number < tasks.size()){
+                    Task t = tasks.remove(number);
+                    System.out.println("Task removed with success!");
+                } else {
+                    System.out.println("Invalid task number! ");
+                }
             }
             else {
                 System.out.println("The option is invalid.");

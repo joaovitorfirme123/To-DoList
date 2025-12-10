@@ -1,4 +1,2 @@
 lavar louça;false
 fazer lição de casa;false
-fazer pão;true
-fazer chá;false
